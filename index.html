@@ -1,104 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exclusive Content</title>
 
-  <style>  
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-      text-align: center;
-    }
+<!-- TikTok Pixel - ViewContent -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;
+  var tt=w[t]=w[t]||[];
+  tt.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];
+  tt.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}; 
+  for(var i=0;i<tt.methods.length;i++)tt.setAndDefer(tt,tt.methods[i]);
 
-    .container {
-      max-width: 480px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+  tt.load=function(e,n){
+    var i="https://analytics.tiktok.com/i18n/pixel/events.js";
+    tt._i=tt._i||{},
+    tt._i[e]=[],
+    tt._i[e]._u=i,
+    tt._t=tt._t||{},
+    tt._t[e]=+new Date,
+    tt._o=tt._o||{},
+    tt._o[e]=n||{};
 
-    h1 {
-      font-size: 22px;
-      margin-bottom: 15px;
-    }
+    var o=d.createElement("script");
+    o.type="text/javascript";
+    o.async=!0;
+    o.src=i+"?sdkid="+e+"&lib="+t;
 
-    p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
+    var a=d.getElementsByTagName("script")[0];
+    a.parentNode.insertBefore(o,a)
+  };
 
-    .warning {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 25px;
-    }
+}(window, document, 'ttq');
 
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 18px;
-      background-color: #28a745;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-    }
+ttq.load('D7K3J73C77U0UANUQRCG');
 
-    .btn:active {
-      background-color: #218838;
-    }
+ttq.page();
 
-    footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: #777;
-    }
+ttq.track('ViewContent');
+</script>
+<!-- End TikTok Pixel -->
 
-    footer a {
-      color: #777;
-      text-decoration: none;
-      margin: 0 5px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Video – Apresentacion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+window.smartplayer = window.smartplayer || {};
+window.smartplayer.config = {
+  autoplay: true,
+  muted: false,
+  volume: 1,
+  controls: true,
+  captions: false,
+  subtitles: false,
+  loop: false
+};
+</script>
+
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+
+<link rel="preload" href="https://scripts.converteai.net/e7af0e48-185b-401f-b810-9a36469a6598/players/6a111051a41da65f0026b441/v4/player.js" as="script">
+
+<style>
+body {
+  margin: 0;
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+
+.viewers-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.live-dot {
+  width: 10px;
+  height: 10px;
+  background: #00ff52;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: .3; }
+  100% { opacity: 1; }
+}
+</style>
+
 </head>
 
 <body>
 
-  <div class="container">
+<!-- NOVO VÍDEO -->
+<vturb-smartplayer
+  id="vid-6a111051a41da65f0026b441"
+  style="display: block; margin: 0 auto; width: 100%; max-width: 400px;">
+</vturb-smartplayer>
 
-    <h1>Important Notice</h1>
+<script type="text/javascript">
+var s=document.createElement("script");
+s.src="https://scripts.converteai.net/e7af0e48-185b-401f-b810-9a36469a6598/players/6a111051a41da65f0026b441/v4/player.js";
+s.async=!0;
+document.head.appendChild(s);
+</script>
 
-    <p>
-      This content is intended for adults only and may contain sensitive material.
-      Please confirm your age before continuing.
-    </p>
+<!-- CONTADOR -->
+<div class="viewers-container">
+  <div class="live-dot"></div>
+  <div id="viewers">742 personas están viendo ahora</div>
+</div>
 
-    <p class="warning">
-      By proceeding, you confirm that you are over 18 years old and agree to view this content responsibly.
-    </p>
+<script>
+(function(){
 
-    <!-- BOTÃO COM LINK -->
-    <a href="https://watching.marketing4allllc.shop" class="btn">
-      CLICK TO WATCH IF YOU ARE OVER 18 YEARS OLD
-    </a>
+  let current = 700 + Math.floor(Math.random() * 80);
 
-    <footer>
-      <p>
-        <a href="https://pre.marketing4allllc.shop/privacypolicy" target="_blank">Privacy Policy</a> |
-        <a href="https://pre.marketing4allllc.shop/termsofservice" target="_blank">Terms of Service</a>
-      </p>
-      <p>
-        This page is for informational purposes only and complies with advertising policies.
-      </p>
-    </footer>
+  const el = document.getElementById("viewers");
 
-  </div>
+  function update(){
+
+    current += Math.floor(Math.random() * 15) - 5;
+
+    if (current < 620) current = 620;
+    if (current > 980) current = 980;
+
+    el.textContent = current + " personas están viendo ahora";
+
+    setTimeout(update, 2000 + Math.random() * 3000);
+  }
+
+  update();
+
+})();
+</script>
+
+<!-- TTCLID -->
+<script>
+(function () {
+
+  const ttclid =
+    new URLSearchParams(window.location.search).get("ttclid");
+
+  if (!ttclid) return;
+
+  const interval = setInterval(() => {
+
+    const buttons = document.querySelectorAll("a");
+
+    buttons.forEach(btn => {
+
+      if (
+        btn.href &&
+        btn.href.includes("pay.hotmart.com") &&
+        !btn.href.includes("&src=")
+      ) {
+
+        btn.href += "&src=" + encodeURIComponent(ttclid);
+
+        console.log("TTCLID adicionado ao checkout:", btn.href);
+
+        clearInterval(interval);
+      }
+
+    });
+
+  }, 1000);
+
+})();
+</script>
+
+<!-- Cloudflare Insights -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
+integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+data-cf-beacon='{"version":"2024.11.0","token":"aeab1306340c42be80fce7223a5668c2","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+crossorigin="anonymous"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+data-cf-beacon='{"version":"2024.11.0","token":"aeab1306340c42be80fce7223a5668c2","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+crossorigin="anonymous"></script>
 
 </body>
 </html>
